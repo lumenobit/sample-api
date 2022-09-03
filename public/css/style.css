@@ -1,0 +1,111 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url('../assets/img/banner.jpg');
+    background-size: cover;
+    background-position: top center;
+    min-height: 500px;
+}
+
+.banner-not-found {
+    min-height: calc(100vh - 168px);
+}
+
+@media (max-width: 991px) {
+    .banner-not-found {
+        min-height: calc(100vh - 150px);
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-icon {
+        text-align: center;
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .nav-icon span {
+        font-size: 0.8em;
+    }
+
+    .btn-nav-search {
+        display: none;
+    }
+}
+
+.category-img {
+    max-height: 300px;
+}
+
+.app-section {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.app-section hr {
+    width: 50px;
+}
+
+.app-section hr.center {
+    margin: 1rem auto;
+}
+
+.app-section figcaption {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.app-section a {
+    color: #000;
+    text-decoration: none;
+}
+
+.app-section a .img-wrapper {
+    transition: 0.2s all ease;
+}
+
+.app-section a:hover .img-wrapper {
+    transform: scale(0.96);
+}
+
+.text-shadow {
+    text-shadow: 0 1px 2px #000;
+}
+
+.divider-rating {
+    display: inline-block;
+    height: 1rem;
+    border-right: 1px solid #bebebe;
+    vertical-align: -2px;
+    margin: 0 6px;
+}
+
+.btn-round {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+}
+
+.btn-list button:not(:last-child) {
+    margin-right: 6px;
+}
+
+@media (max-width: 575px) {
+    .btn-responsive {
+        width: 100%;
+    }
+}
+
+.product-rating-item {
+    display: flex;
+    align-items: start;
+}
+
+.product-rating-item .product-rating-value {
+    display: flex;
+    padding: 1px 5px;
+}
